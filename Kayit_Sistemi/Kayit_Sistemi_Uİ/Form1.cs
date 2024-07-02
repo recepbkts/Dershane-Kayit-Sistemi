@@ -24,8 +24,7 @@ namespace Kayit_Sistemi_Uİ
         {
             try
             {
-                //LINGQ filterleme ve sorgulama işlemini yapar ve kolaylık sağlar
-                //lınq methodu (değişken => değişken.property işlem)
+                
 
                 var context = new KS_DBEntities();
 
@@ -38,8 +37,8 @@ namespace Kayit_Sistemi_Uİ
                     Program.KullaniciRolu = Kullanici.Rol;
                     Hide();
                     AnaSayfa anaSayfa = new AnaSayfa();
-                    anaSayfa.ShowDialog(); //Anasayfa penceresini çalıştırır.
-                    Show(); //anasayfa penceresi kapanırsa giriş penceresini göster deemktir.
+                    anaSayfa.ShowDialog(); 
+                    Show(); 
 
                 }
                 else

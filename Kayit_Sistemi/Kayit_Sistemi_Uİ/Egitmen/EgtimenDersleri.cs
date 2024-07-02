@@ -27,7 +27,7 @@ namespace Kayit_Sistemi_Uİ.Egitmen
                 if (kullanici!=null)
                 {
                     var egitmen = kullanici.Egitmen;
-                    Text = egitmen.Ad + " " + egitmen.Soyad; //text formunun başlığıdır
+                    Text = egitmen.Ad + " " + egitmen.Soyad; 
 
                     var kurslar =egitmen.Kurs.ToList();
 

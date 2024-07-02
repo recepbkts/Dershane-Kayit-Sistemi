@@ -31,7 +31,7 @@ namespace Kayit_Sistemi_Uİ.Egitmen
             {
                 var context = new KS_DBEntities();
                 var ders = context.Ders.Find(_dersID);
-                if (ders != null) //ders bulundu
+                if (ders != null) 
                 {
                     Text = ders.DersAdi.ToUpper() + "Not Girişi";
 
@@ -43,7 +43,7 @@ namespace Kayit_Sistemi_Uİ.Egitmen
                             ogrenci.KullaniciID,
                             ogrenci.Ad,
                             ogrenci.Soyad,
-                            not != null ? not.DersNotu1.ToString() : string.Empty //bir satırda if-else kosul ? uyumlu ise bu işlemi yap : yoksa buişlemi yap
+                            not != null ? not.DersNotu1.ToString() : string.Empty
                             );
                     }
                 }
@@ -77,7 +77,7 @@ namespace Kayit_Sistemi_Uİ.Egitmen
                     }
                     var not = context.DersNotu.FirstOrDefault(d => d.DersID == _dersID && d.OgrenciID == OgrenciNumarası);
 
-                    if (not != null)  // yani ders notu veri tabanında mevcuttur
+                    if (not != null)  
                     {
                        not.DersNotu1 = OgrencNotu;
 

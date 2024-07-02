@@ -55,8 +55,6 @@ namespace Kayit_Sistemi_Uİ.Yonetim
         {
             try
             {
-                //var kursID = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                //kısa hali
                 var kursID = (int)dataGridView1.CurrentRow.Cells[0].Value;
                 var context = new KS_DBEntities();
                 var kurs = context.Kurs.Find(kursID);
